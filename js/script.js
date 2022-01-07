@@ -14,8 +14,20 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.*/
 
 //! ciclo per produrre i numeri da 1 a 100
 let i = ''
-for( let i = 1; i  <= 100; i++ ){
-    console.log(i);
-    document.getElementById('numbers').innerHTML += (`${i} <br>` )
+for (let i=1; i <= 100; i++){
+    if( i % 3 && i % 5 ) {
+        console.log(i);
+        document.getElementById('numbers').innerHTML += (`${i} <br>` )
+    } else {
+        if( i % 3 == 0 ) {
+            
+            console.log(`fizz`);
+            document.getElementById('numbers').innerHTML += (`fizz <br>` )
+        }
+        if( i % 5 == 0 ) {
+            console.log(`buzz`);
+            document.getElementById('numbers').innerHTML += (`buzz <br>` )
+        }
+    }
+    
 }
-
