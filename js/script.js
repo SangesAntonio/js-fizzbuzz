@@ -22,15 +22,17 @@ for (let i=1; i <= 100; i++){
         if((i % 3==0) && (i % 5==0)){
             console.log(`Fizzbuzz`);
             document.getElementById('numbers').innerHTML += (`Fizzbuzz <br>` )
-        }
-        if( i % 3 == 0 ) {
-            
-            console.log(`fizz`);
-            document.getElementById('numbers').innerHTML += (`fizz <br>` )
-        }
-        if( i % 5 == 0 ) {
-            console.log(`buzz`);
-            document.getElementById('numbers').innerHTML += (`buzz <br>` )
+        }else{
+
+            if( i % 3 == 0 ) {
+                
+                console.log(`fizz`);
+                document.getElementById('numbers').innerHTML += (`fizz <br>` )
+            }
+            if( i % 5 == 0 ) {
+                console.log(`buzz`);
+                document.getElementById('numbers').innerHTML += (`buzz <br>` )
+            }
         }
     }
     
