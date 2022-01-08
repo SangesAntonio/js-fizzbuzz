@@ -19,6 +19,10 @@ for (let i=1; i <= 100; i++){
         console.log(i);
         document.getElementById('numbers').innerHTML += (`${i} <br>` )
     } else {
+        if((i % 3==0) && (i % 5==0)){
+            console.log(`Fizzbuzz`);
+            document.getElementById('numbers').innerHTML += (`Fizzbuzz <br>` )
+        }
         if( i % 3 == 0 ) {
             
             console.log(`fizz`);
